@@ -29,7 +29,7 @@ console.log(currentMonth);*/
 // Создайте переменную currentDay и присвойте ей текущий день месяца. Значение выведите в консоль.
 
 /*const today = new Date();
-const currentDay = today.getDate();
+const currentDay = today.getDay();
 console.log(currentDay);*/
 
 //****************************************************************************************************************************************
@@ -37,48 +37,90 @@ console.log(currentDay);*/
 //Задание 5
 // Создайте переменную birthday и присвойте ей дату вашего дня рождения в текущем году. Значение выведите в консоль.
 
-const today = new Date();
-const birthday = 
+const birthday = new Date(1987, 11, 22);
+console.log(`${birthday.getDate()}.${birthday.getMonth()}`);
+
+
 
 //****************************************************************************************************************************************
 
 //Задание 6
 // Создайте переменную futureDate и присвойте ей будущую дату (например, через 1 месяц и 10 дней от текущей даты). Значение выведите в консоль.
 
+/*const today = new Date();
+const futureDateInMilliseconds = (today.setDate(today.getDate() + 10), today.setMonth(today.getMonth() + 1));
+const futureDate = new Date(futureDateInMilliseconds);
+console.log(futureDate);*/
+
 //****************************************************************************************************************************************
 
 //Задание 7
 // Выведите в консоль разницу в днях между futureDate и currentDate
+
+// const currentDate = new Date();
+// const currentDateInMilliseconds = currentDate.getTime();
+
+// const futureDateInMilliseconds = (currentDate.setDate(currentDate.getDate() + 10), currentDate.setMonth(currentDate.getMonth() + 1));
+
+// const difference = Math.round((futureDateInMilliseconds - currentDateInMilliseconds) / (1000 * 60 * 60 * 24));
+// console.log(difference);
 
 //****************************************************************************************************************************************
 
 //Задание 8
 // Создайте переменную pastDate и присвойте ей прошедшую дату (например, 5 дней назад от текущей даты). Значение выведите в консоль.
 
+/*const currentDate = new Date();
+const pastDate = new Date(currentDate.setDate(currentDate.getDate() - 5));
+console.log(pastDate);*/
+
 //****************************************************************************************************************************************
 
 //Задание 9
 // Выведите в консоль разницу в днях между currentDate и pastDate
+
+/*const currentDate = new Date();
+const currentDateInMilliseconds = currentDate.getTime();
+
+const pastDateInMilliseconds = currentDate.setDate(currentDate.getDate() - 5);
+
+const difference = Math.round((currentDateInMilliseconds - pastDateInMilliseconds) / (1000 * 60 * 60 * 24));  
+console.log(difference);*/
 
 //****************************************************************************************************************************************
 
 //Задание 10
 // Создайте переменную nextWeek и присвойте ей дату следующей недели. Значение выведите в консоль.
 
+/*const currentDate = new Date();
+const nextWeek = new Date(currentDate.setDate(currentDate.getDate() + 7));
+console.log(nextWeek);*/
+
 //****************************************************************************************************************************************
 
 //Задание 11
 // Выведите в консоль день недели для nextWeek
+
+/*const currentDate = new Date();
+const nextWeek = new Date(currentDate.setDate(currentDate.getDate() + 7));
+const dayNextWeek = nextWeek.getDay();
+console.log(dayNextWeek);*/
 
 //****************************************************************************************************************************************
 
 //Задание 12
 // Создайте переменную futureYear и присвойте ей значение текущего года плюс 5. Значение выведите в консоль.
 
+// const currentDate = new Date();
+// const futureYear = currentDate.getFullYear() + 5;
+// console.log(futureYear);
+
 //****************************************************************************************************************************************
 
 //Задание 13
 // Создайте переменную futureDateInFutureYear и присвойте ей дату вашего дня рождения в будущем году (futureYear). Значение выведите в консоль.
+
+
 
 //****************************************************************************************************************************************
 
@@ -90,7 +132,9 @@ const birthday =
 //Задание 15
 // Используя метод Date.parse(), создайте новый объект date и преобразуйте переменную strDate в дату.
 // Выведите объект date в консоль.
-const strDate = '2023-06-15T08:30:00.000Z';
+// const strDate = '2023-06-15T08:30:00.000Z';
+// const date = new Date(Date.parse(strDate));
+// console.log(date);
 
 //****************************************************************************************************************************************
 
@@ -103,7 +147,7 @@ const strDate = '2023-06-15T08:30:00.000Z';
 //Задание 17
 // Используя метод Date.parse(), попытайтесь преобразовать переменную wrongDate в дату. Добавьте условие, если результат преобразования является NaN, выведите в консоль сообщение 'Неправильный формат даты', в другом случае, выведите сообщение 'Правильный формат даты'.
 // Подсказка: используйте условие if...else
-const date = '2023/06/15';
+// const date = '2023/06/15';
 
 //****************************************************************************************************************************************
 
