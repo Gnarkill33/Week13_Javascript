@@ -37,20 +37,19 @@ console.log(currentDay);*/
 //Задание 5
 // Создайте переменную birthday и присвойте ей дату вашего дня рождения в текущем году. Значение выведите в консоль.
 
-// const now = new Date();
-// const currentYear = now.getFullYear();
-// const birthday = new Date(1987, 12, 22); // 22.12.1987
-// const birthdayDate= birthday.toLocaleDateString(); // 22.12
-// console.log(birthdayDate);
+/*1 вариант:
+const birthday = new Date(1987, 12, 22); // 22.12.1987
+const birthdayDate = birthday.getDate(); // 22
+const birthdayMonth = birthday.getMonth(); // 0
+const today = new Date();
+const year = today.getFullYear();
 
-// // console.log(`${birthdayDate()}.${birthday.getMonth() + 12}.`);
-
-
-
+console.log(`${birthdayDate}.${birthdayMonth + 12}.${year}`);*/
 
 
-
-
+/*2 вариант:
+const birthday = new Date(2023, 12, 22);
+console.log(birthday);*/
 
 //****************************************************************************************************************************************
 
@@ -130,14 +129,14 @@ console.log(futureYear);*/
 //Задание 13
 // Создайте переменную futureDateInFutureYear и присвойте ей дату вашего дня рождения в будущем году (futureYear). Значение выведите в консоль.
 
+/*const birthday = new Date(1987, 12, 22); // 22.12.1987
+const birthdayDate = birthday.getDate(); // 22
+const birthdayMonth = birthday.getMonth(); // 0
+const today = new Date();
+const futureYear = today.getFullYear() + 1;
+const futureDateInFutureYear = `${birthdayDate}.${birthdayMonth + 12}.${futureYear}`;
 
-
-
-
-
-
-
-
+console.log(futureDateInFutureYear);*/
 
 //****************************************************************************************************************************************
 
@@ -179,26 +178,16 @@ console.log(timeStamp);*/
 // Подсказка: используйте условие if...else
 // const date = '2023/06/15';
 
-// const date = '2023/06/15';
-// const wrongDate = new Date(Date.parse(date));
-// console.log(wrongDate);
+/*const date = '2023/06/15';
+const wrongDate = Date.parse(date);
+console.log(wrongDate);
 
-// if (wrongDate === isNaN){
-//     console.log('Неправильный формат даты');
-// }
-// else{
-//     console.log('Правильный формат даты');
-// }
-
-
-
-
-
-
-
-
-
-
+if (wrongDate === NaN){
+    console.log('Неправильный формат даты');
+}
+else{
+    console.log('Правильный формат даты');
+}*/
 
 //****************************************************************************************************************************************
 
