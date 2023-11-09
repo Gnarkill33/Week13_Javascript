@@ -358,8 +358,8 @@ printDay();*/
 //Задание 28
 // Используя цикл switch case, напишите программу, которая принимает на вход символ направления (N, S, E, W) и выводит в консоль полное название этого направления (N - "Север", S - "Юг", E - "Восток", W - "Запад").
 
-/*let direction = '';
-let fullName;
+/*const direction = '';
+const fullName;
 
 const getDirection = () => {
 switch (direction) {
